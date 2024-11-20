@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 # Project name and version
-project(synthcpp VERSION 1.0)
+project(synthcpp VERSION 0.1)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)

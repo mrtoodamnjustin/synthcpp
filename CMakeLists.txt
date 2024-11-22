@@ -7,6 +7,8 @@ project(synthcpp VERSION 0.1)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
+
 # Add subdirectories
 add_subdirectory(src/AudioEngine)
 add_subdirectory(src/App)
@@ -15,4 +17,4 @@ add_subdirectory(src/App)
 add_executable(synthcpp src/main.cpp)
 
 # Link libraries (e.g., linking AudioEngine and App to the main executable)
-target_link_libraries(synthcpp PRIVATE AudioEngine App)
+target_link_libraries(synthcpp PRIVATE Qt6::Core Qt6::Widgets AudioEngine App)

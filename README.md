@@ -9,16 +9,27 @@ Welcome to **synthcpp**, a Work-In-Progress MIDI synthesizer developed in C++ wi
 
 # Building
 
-### To build the program run the following commands from the project directory:
-
-To configure your build environment, run:
+Clone the repository and navigate to it's directory:
 
 ```
-cmake .
+git clone https://github.com/mrtoodamnjustin/synthcpp.git
+cd synthcpp/
 ```
 
-After the configuration is complete, use `make` to compile the project:
+To configure your build environment run:
 
 ```
-make
+cmake -S . -B build
+```
+
+After the configuration is complete, use `cmake --build` to compile the project:
+
+```
+cmake --build build
+```
+
+The executable will be found in `build/` and can be ran using something like (output file can differ depending on operating system):
+
+```
+build/synthcpp.exe
 ```

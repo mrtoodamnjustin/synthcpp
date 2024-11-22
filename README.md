@@ -6,6 +6,7 @@ Welcome to **synthcpp**, a Work-In-Progress MIDI synthesizer developed in C++ wi
 
 * C++ compiler: A C++17 or later compatible compiler (such as GCC or Clang).
 * CMake: Version 3.5 or greater
+* Qt6: Version 6.0.0 or greator
 
 # Building
 
